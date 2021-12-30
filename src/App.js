@@ -1,13 +1,9 @@
 import React from 'react';
 import './App.css';
+import MainBodyLandscape from '../src/components/landscape/MainBodyLandscape/MainBodyLandscape';
+import MainBodyPortrait from '../src/components/portrait/MainBodyPortrait/MainBodyPortrait';
 
-//Adjust viewport height for mobile browser
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`);
-window.addEventListener('resize', ()=>{
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-})
+
 
 let screenOrientation= null;
 if((window.innerHeight / window.innerWidth) < .87){
@@ -19,22 +15,77 @@ if((window.innerHeight / window.innerWidth) < .87){
 class App extends React.Component {
   
   state= {
+    sectionShown:'top',
+    screenOrientation: screenOrientation,
+    sections: [
+      { id: 1,
+        title: "top",
+        }
+    ]
 
       //state goes here
   }
 
-  constructor(props){
+  constructor(props) {
     super(props);
-    //all methods
+    this.checkScreenOrientation = this.checkScreenOrientation.bind(this);
+    this.setScreenOrientation = this.setScreenOrientation.bind(this);
+    this.sectionShownHandler.bind(this);
+  }
+
+  checkScreenOrientation = () => {
+    let newOrientation= null;
+
+    if((window.innerHeight/ window.innerWidth) < .87){
+      newOrientation= "landscape";
+    } else {
+      newOrientation= "portrait";
+    } 
+
+    if(newOrientation !== this.state.screenOrientation){
+      this.setScreenOrientation(newOrientation);
+    }
+  }
+
+  setScreenOrientation= (newOrientation)=>{
+    this.setState({
+      screenOrientation: newOrientation
+    })
+  }
+
+  sectionShownHandler = (sectionId) =>{
+    this.setState ({
+      sectionShown : sectionId
+    })
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.checkScreenOrientation);
+    window.addEventListener("orientationchange", this.checkScreenOrientation);
   }
 
   render(){
-    //if stuff and functions
+    let appBody = null;
+    let appClasses= "";
+ 
+    if (this.state.screenOrientation === "landscape") {
+      appBody = <MainBodyLandscape 
+                  menuClick = {this.pageShownHandler}
+                  pageShown= {this.state.pageShown} 
+                  pages={this.state.pages} />;
+      appClasses= "appLandscape";
+    } else {
+      appBody = <MainBodyPortrait 
+                  menuClick = {this.pageShownHandler}
+                  pageShown= {this.state.pageShown} 
+                  pages={this.state.pages}
+                />;
+      appClasses= "appPortrait";
+    }
 
     return (
-      <div className="App">
-        This will be the app.
-       
+      <div className={appClasses}>
+        {appBody}
       </div>
     );
 
