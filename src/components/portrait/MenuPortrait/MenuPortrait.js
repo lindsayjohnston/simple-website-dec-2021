@@ -12,7 +12,9 @@ const menuPortrait = (props) =>{
   return(
       <div className="menuPortrait">
             <div className="title">
-                <h1>bocaloud</h1>
+                <a href="#top">
+                    <h1>bocaloud</h1>
+                </a>
             </div>
             <div className="hamburgerMenuDiv">
               <i
@@ -25,7 +27,7 @@ const menuPortrait = (props) =>{
               </div>
               <div className="menuModalLinks">
                   {sectionsInfo.map(section => (
-                      <a href={section.id}>
+                      <a href={"#" + section.id}>
                           {section.title}
                           {/* need to add click handler to links */}
                       </a>

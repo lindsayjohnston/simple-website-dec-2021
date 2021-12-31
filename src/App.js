@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import MainBodyLandscape from '../src/components/landscape/MainBodyLandscape/MainBodyLandscape';
 import MainBodyPortrait from '../src/components/portrait/MainBodyPortrait/MainBodyPortrait';
+import topImage from '../src/media/logos/bocaloud_first_logo_.png';
 import workImage from '../src/media/images/computer-lady-hands.png';
 import aboutImage from '../src/media/images/lindsay-glasses.JPG';
 import contactImage from '../src/media/images/red-phone.jpg';
@@ -22,9 +23,9 @@ class App extends React.Component {
     menuModalShown: false,
     screenOrientation:screenOrientation,
     sections: [
-      { id: "#top",
+      { id: "top",
         title: null,
-        image: null,
+        image: topImage,
         content1: 
           <div>
             <h1>Info about the business.</h1>
@@ -32,7 +33,7 @@ class App extends React.Component {
           </div>,
         content2:null
         },
-        { id: "#work",
+        { id: "work",
         title: "Our Work",
         image: workImage,
         content1: 
@@ -41,7 +42,7 @@ class App extends React.Component {
           </div>,
         content2: null
         },
-        { id: "#about",
+        { id: "about",
         title: "About",
         image: aboutImage,
         content1: 
@@ -52,7 +53,7 @@ class App extends React.Component {
         content2:
           <p>Thanks for visiting my website! For over a decade I have worked in the non-profit and small businesss sector. I've seen a great need for affordable websites in this area and I'm here to meet that need!</p>
         },
-        { id: "#contact",
+        { id: "contact",
         title: "Contact",
         image: contactImage,
         content1: 

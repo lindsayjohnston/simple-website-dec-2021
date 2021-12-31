@@ -30,16 +30,30 @@
     width: 100%;
     height: 90%;
     max-width: 900px;
-    background-color: coral;
+    /* background-color: coral; */
     /* that's 2% of the parent width I think */
     display: flex;
     /* min-height: 300px; */
 }
 
-.sectionLandscapeTop > .content > div {
+.sectionLandscapeTop > .content > .left {
     width: 50%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectionLandscapeTop > .content > .right {
+    width: 50%;
+    /* border: 1px solid black; */
+    padding: 2%;
+}
+
+.sectionLandscapeTop > .content > .right > .imageDiv > img{
+    width: 100%;
+    /* background-color: thistle; */
 }
 
 

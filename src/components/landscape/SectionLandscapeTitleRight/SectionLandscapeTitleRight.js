@@ -1,23 +1,26 @@
 import "./SectionLandscapeTitleRight.css";
 
 const sectionLandscapeTitleRight = (props) =>{
+    const sectionsInfo= props.sections[props.order];
 
     return(
         <div className="sectionLandscapeTitleRight">
             <div className="sectionHeadingDiv">
-                <div className="anchorLinkDiv" id="ANCHOR2"></div>
+                <div className="anchorLinkDiv" id={sectionsInfo.id}></div>
             </div>
             <div className="content">
                 <div className="left">
-                    Image goes here
+                <div className="imageDiv">
+                        <img src= {sectionsInfo.image} alt={sectionsInfo.title}></img>
+                    </div>
                 </div>
                 <div className="right">
-                    <h1>Title</h1>
+                    <h1>{sectionsInfo.title}</h1>
                     <div className="content1Div">
-                        Content 1
+                        {sectionsInfo.content1}
                     </div>
                     <div className="content2Div">
-                        Content 2
+                    {sectionsInfo.content2}
                     </div>
                 </div>
 

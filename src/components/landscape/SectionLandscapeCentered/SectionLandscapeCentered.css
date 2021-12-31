@@ -25,18 +25,38 @@
     top: -90px;
 }
 
-
-
 .sectionLandscapeCentered > .content {
     width: 100%;
-    height: 90%;
+    height: 80%;
     max-width: 900px;
     background-color: coral;
     /* that's 2% of the parent width I think */
     display: flex;
 }
 
-.sectionLandscapeCentered > .content > div {
+.sectionLandscapeCentered > .content > .left {
+    width: 50%;
+    border: 1px solid black;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionLandscapeCentered > .content > .left > .imageDiv{
+    width: 100%;
+    height: 100%;
+    background-color: thistle;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionLandscapeCentered > .content > .left > .imageDiv >img{
+    /* width: 100%; */
+    height: 100%;
+}
+
+.sectionLandscapeCentered > .content > .right {
     width: 50%;
     border: 1px solid black;
     padding: 2%;

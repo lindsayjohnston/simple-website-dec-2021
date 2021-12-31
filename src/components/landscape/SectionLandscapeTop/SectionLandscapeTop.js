@@ -1,21 +1,28 @@
 import "./SectionLandscapeTop.css";
 
 const sectionLandscapeTop = (props) =>{
+    const topSection= props.sections[0];
 
     return(
         <div className="sectionLandscapeTop">
             <div className="sectionHeadingDiv">
-                <div className="anchorLinkDiv" id="top"></div>
+                <div className="anchorLinkDiv" id={topSection.id}></div>
             </div>
             <div className="content">
-                <div>
-                    <h1>Info about the business.</h1>
-                    <div>
-                        Text goes here
-                    </div>
+                <div className="left">
+                  <div className="content1Div">
+                      {topSection.content1}
+                  </div>
+                  <div className="content2Div">
+                      {topSection.content2}
+                  </div>
                 </div>
-                <div> 
-                    Image goes here
+                <div className="right"> 
+                    <div className="imageDiv">
+                        <img src={topSection.image}></img>
+                  
+                    </div>
+                 
                 </div>
             </div>
         </div>

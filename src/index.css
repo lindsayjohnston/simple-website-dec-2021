@@ -5,12 +5,17 @@
   /* --accent-color: #5c5c5c; */
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   /* 100,400,700 font weights */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 h1{
