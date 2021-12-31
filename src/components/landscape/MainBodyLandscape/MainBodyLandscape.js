@@ -7,15 +7,14 @@ import SectionLandscapeTitleLeft from "../SectionLandscapeTitleLeft/SectionLands
 
 
 const mainBodyLandscape = (props) =>{
-  //if stuff
   
   return(
       <div className="mainBodyLandscape">
-           <MenuLandscape/>
-           <SectionLandscapeTop/>
-           <SectionLandscapeCentered/>
-           <SectionLandscapeTitleRight/>
-           <SectionLandscapeTitleLeft/>
+           <MenuLandscape sections={props.sections}/>
+           <SectionLandscapeTop sections={props.sections}/>
+           <SectionLandscapeCentered sections={props.sections}/>
+           <SectionLandscapeTitleRight sections={props.sections}/>
+           <SectionLandscapeTitleLeft sections={props.sections}/>
       </div>
   )
 };

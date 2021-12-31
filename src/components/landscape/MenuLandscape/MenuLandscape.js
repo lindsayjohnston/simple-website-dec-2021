@@ -1,7 +1,8 @@
 import './MenuLandscape.css';
 
 const menuLandscape = (props) =>{
-  //if stuff
+  const sectionsInfo= props.sections;
+
   
   return(
       <div className="menuLandscape">
@@ -9,9 +10,9 @@ const menuLandscape = (props) =>{
                 <h1>bocaloud</h1>
             </div>
             <div className="sectionLinks">
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
+                {sectionsInfo.map( section =>(
+                  <a href={section.id}>{section.title}</a>
+                ))}
             </div>
       </div>
   )

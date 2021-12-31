@@ -22,7 +22,7 @@ class App extends React.Component {
     menuModalShown: false,
     screenOrientation:screenOrientation,
     sections: [
-      { id: "top",
+      { id: "#top",
         title: null,
         image: null,
         content1: 
@@ -32,7 +32,7 @@ class App extends React.Component {
           </div>,
         content2:null
         },
-        { id: "work",
+        { id: "#work",
         title: "Our Work",
         image: workImage,
         content1: 
@@ -41,7 +41,7 @@ class App extends React.Component {
           </div>,
         content2: null
         },
-        { id: "about",
+        { id: "#about",
         title: "About",
         image: aboutImage,
         content1: 
@@ -52,7 +52,7 @@ class App extends React.Component {
         content2:
           <p>Thanks for visiting my website! For over a decade I have worked in the non-profit and small businesss sector. I've seen a great need for affordable websites in this area and I'm here to meet that need!</p>
         },
-        { id: "contact",
+        { id: "#contact",
         title: "Contact",
         image: contactImage,
         content1: 
@@ -126,18 +126,18 @@ class App extends React.Component {
  
     if (this.state.screenOrientation === "landscape") {
       appBody = <MainBodyLandscape 
-                  menuClick = {this.pageShownHandler}
-                  pageShown= {this.state.pageShown} 
-                  pages={this.state.pages} />;
+                  menuClick = {this.sectionShownHandler}
+                  sectionShown= {this.state.sectionShown} 
+                  sections={this.state.sections} />;
       appClasses= "appLandscape";
     } else {
       appBody = <MainBodyPortrait 
-                  menuClick = {this.pageShownHandler}
+                  menuClick = {this.sectionShownHandler}
                   barsClick= {this.menuModalOpenHandler}
                   closeModalClick={this.menuModalCloseHandler}
                   menuModalShown= {this.state.menuModalShown}
-                  pageShown= {this.state.pageShown} 
-                  pages={this.state.pages}
+                  sectionShown= {this.state.sectionShown} 
+                  sections={this.state.sections}
                 />;
       appClasses= "appPortrait";
     }

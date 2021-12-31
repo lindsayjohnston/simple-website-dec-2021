@@ -9,15 +9,27 @@ const mainBodyPortrait = (props) =>{
     
     return(
         <div className="mainBodyPortrait">
-            <MenuPortrait 
-                barsClick={()=> props.barsClick()}
-                menuModalShown= {props.menuModalShown}
-                closeModalClick= {() =>{props.closeModalClick()}}
+            <MenuPortrait
+                sections={props.sections}
+                barsClick={() => props.barsClick()}
+                menuModalShown={props.menuModalShown}
+                closeModalClick={() => { props.closeModalClick() }}
             />
-            <SectionPortraitTop />
-            <SectionPortrait fontClass="fontColorLight" bgClass="bgColorMain" />
-            <SectionPortrait fontClass="fontColorDark" bgClass="bgColorLight"/>
-            <SectionPortrait fontClass="fontColorLight" bgClass="bgColorDark" />
+            <SectionPortraitTop
+                sections={props.sections}
+            />
+            <SectionPortrait
+                sections={props.sections}
+                fontClass="fontColorLight"
+                bgClass="bgColorMain" />
+            <SectionPortrait
+                sections={props.sections}
+                fontClass="fontColorDark"
+                bgClass="bgColorLight" />
+            <SectionPortrait
+                sections={props.sections}
+                fontClass="fontColorLight"
+                bgClass="bgColorDark" />
         </div>
     )
   };
