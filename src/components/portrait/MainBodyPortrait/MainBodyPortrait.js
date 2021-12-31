@@ -6,7 +6,11 @@ const mainBodyPortrait = (props) =>{
     
     return(
         <div className="mainBodyPortrait">
-            <MenuPortrait />
+            <MenuPortrait 
+                barsClick={()=> props.barsClick()}
+                menuModalShown= {props.menuModalShown}
+                closeModalClick= {() =>{props.closeModalClick()}}
+            />
         </div>
     )
   };

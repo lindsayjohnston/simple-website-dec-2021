@@ -16,7 +16,8 @@ class App extends React.Component {
   
   state= {
     sectionShown:'top',
-    screenOrientation: screenOrientation,
+    menuModalShown: false,
+    screenOrientation:screenOrientation,
     sections: [
       { id: 1,
         title: "top",
@@ -31,6 +32,8 @@ class App extends React.Component {
     this.checkScreenOrientation = this.checkScreenOrientation.bind(this);
     this.setScreenOrientation = this.setScreenOrientation.bind(this);
     this.sectionShownHandler.bind(this);
+    this.menuModalCloseHandler.bind(this);
+    this.menuModalOpenHandler.bind(this);
   }
 
   checkScreenOrientation = () => {
@@ -59,6 +62,18 @@ class App extends React.Component {
     })
   }
 
+  menuModalCloseHandler = () =>{
+    this.setState ({
+      menuModalShown: false
+    })
+  }
+
+  menuModalOpenHandler = () =>{
+    this.setState ({
+      menuModalShown: true
+    })
+  }
+
   componentDidMount() {
     window.addEventListener('resize', this.checkScreenOrientation);
     window.addEventListener("orientationchange", this.checkScreenOrientation);
@@ -77,6 +92,9 @@ class App extends React.Component {
     } else {
       appBody = <MainBodyPortrait 
                   menuClick = {this.pageShownHandler}
+                  barsClick= {this.menuModalOpenHandler}
+                  closeModalClick={this.menuModalCloseHandler}
+                  menuModalShown= {this.state.menuModalShown}
                   pageShown= {this.state.pageShown} 
                   pages={this.state.pages}
                 />;
