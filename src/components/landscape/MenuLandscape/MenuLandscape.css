@@ -1,0 +1,26 @@
+.menuLandscape{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.menuLandscape > .title{
+   padding: 2vw;
+   /* background-color: chartreuse; */
+}
+
+.menuLandscape > .sectionLinks{
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuLandscape > .sectionLinks > a {
+    padding: 2vw;
+    font-size: 25px;
+}

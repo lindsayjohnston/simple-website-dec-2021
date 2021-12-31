@@ -1,11 +1,12 @@
-//import stuff
+import './MainBodyPortrait.css';
+import MenuPortrait from '../MenuPortrait/MenuPortrait';
 
 const mainBodyPortrait = (props) =>{
     //if stuff
     
     return(
         <div className="mainBodyPortrait">
-              Main Body Portrait
+            <MenuPortrait />
         </div>
     )
   };

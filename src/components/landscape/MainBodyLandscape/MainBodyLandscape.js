@@ -1,11 +1,14 @@
-//import stuff
+import './MainBodyLandscape.css';
+import MenuLandscape from '../MenuLandscape/MenuLandscape';
+import SectionLandscapeCentered from "../SectionLandscapeCentered/SectionLandscapeCentered";
 
 const mainBodyLandscape = (props) =>{
   //if stuff
   
   return(
       <div className="mainBodyLandscape">
-            Main Body Landscape
+           <MenuLandscape/>
+           <SectionLandscapeCentered/>
       </div>
   )
 };

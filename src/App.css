@@ -1,5 +1,9 @@
-.App {
+.appLandscape {
   background-color: blueviolet;
+}
+
+.appPortrait {
+  background-color: pink;
 }
 
 

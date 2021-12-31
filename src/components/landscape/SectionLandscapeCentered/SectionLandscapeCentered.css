@@ -1,0 +1,34 @@
+.sectionLandscapeCentered{
+    background-color: var(--main-color);
+    color: var(--light-color);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionLandscapeCentered > .title{
+    width: 100%;
+    /* background-color: blue; */
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.sectionLandscapeCentered > .content {
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    background-color: coral;
+    /* that's 2% of the parent width I think */
+    display: flex;
+}
+
+.sectionLandscapeCentered > .content > div {
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 2%;
+}
