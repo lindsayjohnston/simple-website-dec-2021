@@ -31,4 +31,28 @@ a {
   text-decoration: none;
 }
 
+.bgColorMain{
+  background-color: var(--main-color);
+}
+
+.bgColorDark{
+  background-color: var(--dark-color);
+}
+
+.bgColorLight{
+  background-color: var(--light-color);
+}
+
+.fontColorMain{
+  color: var(--main-color);
+}
+
+.fontColorDark{
+  color: var(--dark-color);
+}
+
+.fontColorLight{
+  color: var(--light-color);
+}
+
 
