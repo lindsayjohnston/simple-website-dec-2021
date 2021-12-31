@@ -4,7 +4,8 @@ const sectionLandscapeCentered = (props) =>{
 
     return(
         <div className="sectionLandscapeCentered">
-            <div className="title">
+            <div className="sectionHeadingDiv">
+                <div className="anchorLinkDiv" id="ANCHOR"></div>
                 <h1>Title</h1>
             </div>
             <div className="content">
