@@ -27,11 +27,12 @@ class App extends React.Component {
         title: null,
         image: topImage,
         content1: 
+        <button>Click: $299 Website By Next Week!</button>, 
+        content2:
           <div>
-            <h1>Info about the business.</h1>
-            <p>Text goes here.</p>
+            <h1>Get an affordable website - fast!</h1>
+            <p>Let's get you online.</p>
           </div>,
-        content2:null
         },
         { id: "work",
         title: "Our Work",
