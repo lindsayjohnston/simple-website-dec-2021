@@ -1,22 +1,30 @@
 .sectionLandscapeTitleRight{
     background-color: var(--light-color);
     color: var(--dark-color);
-    padding-top: 80px;
     height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sectionLandscapeTitleRight > .title{
+.sectionLandscapeTitleRight > .sectionHeadingDiv{
     width: 100%;
     /* background-color: blue; */
     height: 80px;
+    position: relative;
+    /* this is for the anchor link to be positioned above */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 25px;
 }
+
+.sectionLandscapeTitleRight > .sectionHeadingDiv > .anchorLinkDiv {
+    position: absolute;
+    height: 90px;
+    top: -90px;
+}
+
 
 .sectionLandscapeTitleRight > .content {
     width: 100%;

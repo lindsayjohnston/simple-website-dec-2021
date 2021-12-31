@@ -4,6 +4,10 @@ const sectionLandscapeTop = (props) =>{
 
     return(
         <div className="sectionLandscapeTop">
+            <div className="sectionHeadingDiv">
+                <div className="anchorLinkDiv" id="top"></div>
+                <h1>NO TITLE</h1>
+            </div>
             <div className="content">
                 <div>
                     <h1>Info about the business.</h1>

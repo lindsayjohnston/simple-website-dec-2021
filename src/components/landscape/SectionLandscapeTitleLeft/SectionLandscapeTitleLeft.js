@@ -4,6 +4,10 @@ const sectionLandscapeTitleLeft = (props) =>{
 
     return(
         <div className="sectionLandscapeTitleLeft">
+            <div className="sectionHeadingDiv">
+                <div className="anchorLinkDiv" id="ANCHOR1"></div>
+                <h1>NO TITLE</h1>
+            </div>
             <div className="content">
                 <div>
                     <h1>Title</h1>
