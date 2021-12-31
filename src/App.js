@@ -4,7 +4,7 @@ import MainBodyLandscape from '../src/components/landscape/MainBodyLandscape/Mai
 import MainBodyPortrait from '../src/components/portrait/MainBodyPortrait/MainBodyPortrait';
 import topImage from '../src/media/logos/bocaloud_first_logo_.png';
 import workImage from '../src/media/images/computer-lady-hands.png';
-import aboutImage from '../src/media/images/lindsay-glasses.JPG';
+import aboutImage from '../src/media/images/lindsay-glasses.jpg';
 import contactImage from '../src/media/images/red-phone.jpg';
 
 
@@ -41,23 +41,23 @@ class App extends React.Component {
           <div>
             <ul>
               <li>
-                <a href="https://www.micahclay.us/" target="_blank">
+                <a href="https://www.micahclay.us/" target="_blank" rel="noreferrer">
                   Micah Clay - Musician</a>
               </li>
               <li>
-                <a href="https://www.vannaoh.com/" target="_blank">
+                <a href="https://www.vannaoh.com/" target="_blank" rel="noreferrer">
                   Vanna Oh! - Musician</a>
               </li>
               <li>
-                <a href="#" target="_blank">
+                <a href="#" target="_blank" rel="noreferrer">
                   Nonprofit Website</a>
               </li>
               <li>
-                <a href="#" target="_blank">
+                <a href="#" target="_blank" rel="noreferrer">
                   Portfolio Website</a>
               </li>
               <li>
-                <a href="#" target="_blank">
+                <a href="#" target="_blank" rel="noreferrer">
                   Landscaping Business Website</a>
               </li>
             </ul>
