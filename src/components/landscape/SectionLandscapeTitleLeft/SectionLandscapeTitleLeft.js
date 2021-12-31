@@ -10,7 +10,7 @@ const sectionLandscapeTitleLeft = (props) =>{
             </div>
             <div className="content">
                 <div className="left">
-                    <h1>{sectionsInfo.title}</h1>
+                    <h1 className="sectionTitleLandscape">{sectionsInfo.title}</h1>
                     <div className="content1Div"> {sectionsInfo.content1}</div>
                     <div className="content2Div"> {sectionsInfo.content2}</div>
                 </div>

@@ -27,9 +27,11 @@ const menuPortrait = (props) =>{
               </div>
               <div className="menuModalLinks">
                   {sectionsInfo.map(section => (
-                      <a href={"#" + section.id}>
+                      <a 
+                        href={"#" + section.id}
+                        onClick={() => { props.closeModalClick()}} >
                           {section.title}
-                          {/* need to add click handler to links */}
+                        
                       </a>
                   ))}
 

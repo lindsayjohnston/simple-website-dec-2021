@@ -1,5 +1,5 @@
 .sectionPortrait{
-    height: 500px;
+    /* height: 500px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,26 +19,43 @@
 
 .sectionPortrait > .sectionHeadingDiv > .anchorLinkDiv {
     position: absolute;
-    height: 10vh;
-    top: -10vh;
+    height: 8vh;
+    top: -8vh;
 }
 
 .sectionPortrait > .content {
     width: 100%;
-    height: 90%;
-    max-width: 900px;
-    /* background-color: coral; */
-    /* that's 2% of the parent width I think */
     display: flex;
     flex-direction: column;
+    text-align: center;
     /* min-height: 300px; */
 }
 
 .sectionPortrait > .content > div {
-    width: 100%;
-    border: 1px solid black;
+    /* width: 100%; */
+    /* border: 1px solid black; */
     padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.sectionPortrait > .content > .imageDiv{
+    /* width: 100%; */
+    /* background-color: thistle; */
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionPortrait > .content >  .imageDiv >img{
+    height: 90%;
+}
+
+
+
+
 
 
 

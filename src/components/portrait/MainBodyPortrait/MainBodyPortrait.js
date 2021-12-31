@@ -17,17 +17,21 @@ const mainBodyPortrait = (props) =>{
             />
             <SectionPortraitTop
                 sections={props.sections}
+
             />
             <SectionPortrait
                 sections={props.sections}
+                order="1"
                 fontClass="fontColorLight"
                 bgClass="bgColorMain" />
             <SectionPortrait
                 sections={props.sections}
+                order="2"
                 fontClass="fontColorDark"
                 bgClass="bgColorLight" />
             <SectionPortrait
                 sections={props.sections}
+                order="3"
                 fontClass="fontColorLight"
                 bgClass="bgColorDark" />
         </div>

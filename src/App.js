@@ -27,7 +27,7 @@ class App extends React.Component {
         title: null,
         image: topImage,
         content1: 
-        <button>Click: $299 Website By Next Week!</button>, 
+        <button>Click to Get a Website By Next Week!</button>, 
         content2:
           <div>
             <h1>Get an affordable website - fast!</h1>
@@ -39,8 +39,34 @@ class App extends React.Component {
         image: workImage,
         content1: 
           <div>
-            <p>Text goes here.</p>
-          </div>,
+            <ul>
+              <li>
+                <a href="https://www.micahclay.us/" target="_blank">
+                  Micah Clay - Musician</a>
+              </li>
+              <li>
+                <a href="https://www.vannaoh.com/" target="_blank">
+                  Vanna Oh! - Musician</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  Nonprofit Website</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  Portfolio Website</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  Landscaping Business Website</a>
+              </li>
+            </ul>
+              
+              
+
+          </div>
+          
+          ,
         content2: null
         },
         { id: "about",
@@ -49,10 +75,10 @@ class App extends React.Component {
         content1: 
           <div>
             <h2>Lindsay Johnston</h2>
-            <h3>Small Business owner.</h3>
+            <h3>Small Business Owner</h3>
           </div>,
         content2:
-          <p>Thanks for visiting my website! For over a decade I have worked in the non-profit and small businesss sector. I've seen a great need for affordable websites in this area and I'm here to meet that need!</p>
+          <p>Hi! I'm the founder of Bocaloud. For over a decade I've worked in the nonprofit and small businesss sectors. There are so many incredible organizations in need of sleek and affordable websites. I'm here to fill that need!</p>
         },
         { id: "contact",
         title: "Contact",
@@ -66,8 +92,6 @@ class App extends React.Component {
           </div>
         }
     ]
-
-      //state goes here
   }
 
   constructor(props) {
@@ -134,7 +158,7 @@ class App extends React.Component {
       appClasses= "appLandscape";
     } else {
       appBody = <MainBodyPortrait 
-                  menuClick = {this.sectionShownHandler}
+                  // menuClick = {this.sectionShownHandler}
                   barsClick= {this.menuModalOpenHandler}
                   closeModalClick={this.menuModalCloseHandler}
                   menuModalShown= {this.state.menuModalShown}

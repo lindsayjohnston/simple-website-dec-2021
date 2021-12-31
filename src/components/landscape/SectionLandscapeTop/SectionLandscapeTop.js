@@ -10,11 +10,11 @@ const sectionLandscapeTop = (props) =>{
             </div>
             <div className="content">
                 <div className="left">
-                  <div className="content1Div">
-                      {topSection.content1}
-                  </div>
                   <div className="content2Div">
                       {topSection.content2}
+                  </div>
+                  <div className="content1Div">
+                      {topSection.content1}
                   </div>
                 </div>
                 <div className="right"> 

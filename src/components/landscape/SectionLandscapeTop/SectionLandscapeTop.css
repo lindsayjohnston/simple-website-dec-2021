@@ -11,7 +11,7 @@
 .sectionLandscapeTop > .sectionHeadingDiv{
     width: 100%;
     /* background-color: blue; */
-    height: 80px;
+    /* height: 80px; */
     position: relative;
     /* this is for the anchor link to be positioned above */
     display: flex;

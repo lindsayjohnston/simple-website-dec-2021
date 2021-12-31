@@ -15,7 +15,7 @@ const sectionLandscapeTitleRight = (props) =>{
                     </div>
                 </div>
                 <div className="right">
-                    <h1>{sectionsInfo.title}</h1>
+                    <h1 className="sectionTitleLandscape">{sectionsInfo.title}</h1>
                     <div className="content1Div">
                         {sectionsInfo.content1}
                     </div>
