@@ -9,8 +9,15 @@ const sectionLandscapeCentered = (props) =>{
                 <h1>Title</h1>
             </div>
             <div className="content">
-                <div>Image Goes Here</div>
-                <div> Text Goes Here</div>
+                <div className="left">
+                    Image Goes Here
+                </div>
+                <div className="right">
+                    <div className="content1Div"> Content 1</div>
+                    <div className="content2Div"> Content 2</div>
+
+                </div>
+                
             </div>
         </div>
     )

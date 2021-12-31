@@ -1,11 +1,11 @@
-.sectionPortraitCentered{
+.sectionPortrait{
     height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sectionPortraitCentered > .sectionHeadingDiv{
+.sectionPortrait > .sectionHeadingDiv{
     width: 100%;
     /* background-color: blue; */
     height: 10vh;
@@ -17,24 +17,24 @@
 }
 
 
-.sectionPortraitCentered > .sectionHeadingDiv > .anchorLinkDiv {
+.sectionPortrait > .sectionHeadingDiv > .anchorLinkDiv {
     position: absolute;
     height: 10vh;
     top: -10vh;
 }
 
-.sectionPortraitCentered > .content {
+.sectionPortrait > .content {
     width: 100%;
     height: 90%;
     max-width: 900px;
-    background-color: coral;
+    /* background-color: coral; */
     /* that's 2% of the parent width I think */
     display: flex;
     flex-direction: column;
     /* min-height: 300px; */
 }
 
-.sectionPortraitCentered > .content > div {
+.sectionPortrait > .content > div {
     width: 100%;
     border: 1px solid black;
     padding: 2%;

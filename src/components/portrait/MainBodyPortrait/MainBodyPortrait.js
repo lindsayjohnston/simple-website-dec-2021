@@ -1,7 +1,8 @@
 import './MainBodyPortrait.css';
 import MenuPortrait from '../MenuPortrait/MenuPortrait';
 import SectionPortraitTop from "../SectionPortraitTop/SectionPortraitTop";
-import SectionPortraitCentered from "../SectionPortraitCentered/SectionPortraitCentered";
+import SectionPortrait from "../SectionPortrait/SectionPortrait";
+
 
 const mainBodyPortrait = (props) =>{
     //if stuff
@@ -14,9 +15,9 @@ const mainBodyPortrait = (props) =>{
                 closeModalClick= {() =>{props.closeModalClick()}}
             />
             <SectionPortraitTop />
-            <SectionPortraitCentered fontClass="fontColorLight" bgClass="bgColorMain" />
-            <SectionPortraitCentered fontClass="fontColorDark" bgClass="bgColorLight"/>
-            <SectionPortraitCentered fontClass="fontColorLight" bgClass="bgColorDark" />
+            <SectionPortrait fontClass="fontColorLight" bgClass="bgColorMain" />
+            <SectionPortrait fontClass="fontColorDark" bgClass="bgColorLight"/>
+            <SectionPortrait fontClass="fontColorLight" bgClass="bgColorDark" />
         </div>
     )
   };
