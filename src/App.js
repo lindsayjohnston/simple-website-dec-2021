@@ -4,7 +4,7 @@ import MainBodyLandscape from '../src/components/landscape/MainBodyLandscape/Mai
 import MainBodyPortrait from '../src/components/portrait/MainBodyPortrait/MainBodyPortrait';
 import topImage from '../src/media/logos/bocaloud_first_logo_.png';
 import workImage from '../src/media/images/computer-lady-hands.png';
-import aboutImage from '../src/media/images/lindsay-glasses.jpg';
+import aboutImage from '../src/media/images/lindsay-glasses.png';
 import contactImage from '../src/media/images/red-phone.jpg';
 
 
