@@ -7,6 +7,7 @@ import workImage from '../src/media/images/computer-lady-hands.png';
 import aboutImage from '../src/media/images/lindsay-glasses.jpg';
 import contactImage from '../src/media/images/red-phone.jpg';
 
+
 let screenOrientation= null;
 if((window.innerHeight / window.innerWidth) < .87){
   screenOrientation= "landscape";
