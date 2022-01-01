@@ -1,9 +1,13 @@
-.appLandscape {
+/* .appLandscape {
   background-color: blueviolet;
 }
 
 .appPortrait {
   background-color: pink;
+} */
+
+.appPortrait {
+  min-width: 350px;
 }
 
 

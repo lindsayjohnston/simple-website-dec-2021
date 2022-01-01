@@ -5,6 +5,7 @@
     background-color: var(--dark-color);
     color: var(--light-color);
     width: 100%;
+    min-width: 350px;
     height: 10vh;
     max-height: 70px;
     display: flex;
@@ -68,7 +69,7 @@
 }
 
 .menuPortrait > .menuModal > .menuModalLinks > a{
-    padding: 10px;
+
     font-weight: bold;
     width: 30%;
 }
