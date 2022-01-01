@@ -50,8 +50,8 @@ class App extends React.Component {
                   Vanna Oh! - Musician</a>
               </li>
               <li>
-                <a href="#" target="_blank" rel="noreferrer">
-                  Nonprofit Website - Coming Soon</a>
+                <a href="https://master.d3psjk7ty1d27s.amplifyapp.com/" target="_blank" rel="noreferrer">
+                  Gardening Shop Website</a>
               </li>
               <li>
                 <a href="#" target="_blank" rel="noreferrer">
