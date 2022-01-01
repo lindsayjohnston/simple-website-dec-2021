@@ -61,8 +61,16 @@
 .menuPortrait > .menuModal > .menuModalLinks{
     /* border: 1px black solid; */
     display: flex;
+    width: 100%;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+}
+
+.menuPortrait > .menuModal > .menuModalLinks > a{
+    padding: 10px;
+    font-weight: bold;
+    width: 30%;
 }
 
 

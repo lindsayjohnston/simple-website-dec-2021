@@ -41,25 +41,21 @@ class App extends React.Component {
         content1: 
           <div>
             <ul>
+            <li>
+                <a href="https://master.d3psjk7ty1d27s.amplifyapp.com/" target="_blank" rel="noreferrer">
+                  Flower Farm Website</a>
+              </li>
+              <li>
+                <a href="https://master.d3euk1bu830ig4.amplifyapp.com/" target="_blank" rel="noreferrer">
+                  Bait & Tackle Website</a>
+              </li>
               <li>
                 <a href="https://www.micahclay.us/" target="_blank" rel="noreferrer">
-                  Micah Clay - Musician</a>
+                  Micah Clay - Musician Website</a>
               </li>
               <li>
                 <a href="https://www.vannaoh.com/" target="_blank" rel="noreferrer">
-                  Vanna Oh! - Musician</a>
-              </li>
-              <li>
-                <a href="https://master.d3psjk7ty1d27s.amplifyapp.com/" target="_blank" rel="noreferrer">
-                  Gardening Shop Website</a>
-              </li>
-              <li>
-                <a href="#" target="_blank" rel="noreferrer">
-                  Portfolio Website - Coming Soon</a>
-              </li>
-              <li>
-                <a href="#" target="_blank" rel="noreferrer">
-                  Landscaping Business Website - Coming Soon</a>
+                  Vanna Oh! - Musician Website</a>
               </li>
             </ul> 
           </div>
@@ -72,8 +68,8 @@ class App extends React.Component {
         image: aboutImage,
         content1: 
           <div>
-            <h2>Lindsay Johnston</h2>
-            <h3>Small Business Owner</h3>
+            <h2>L.J.</h2>
+            <h3>Small Business Owner - Tri-Cities Native</h3>
           </div>,
         content2:
           <p>Hi! I'm the founder of Bocaloud. For over a decade I've worked in the nonprofit and small businesss sectors. There are so many incredible organizations in need of sleek and affordable websites. I'm here to fill that need!</p>
