@@ -27,7 +27,9 @@ class App extends React.Component {
         title: null,
         image: topImage,
         content1: 
-        <button>Click to Get a Website By Next Week!</button>, 
+        <button>
+          <a href="https://forms.gle/bZXqjd5rsD8wwTm5A" target="_blank" rel="noreferrer">Click to Get a Website By Next Week!</a> 
+        </button>, 
         content2:
           <div>
             <h1>Get an affordable website - fast!</h1>
@@ -50,20 +52,17 @@ class App extends React.Component {
               </li>
               <li>
                 <a href="#" target="_blank" rel="noreferrer">
-                  Nonprofit Website</a>
+                  Nonprofit Website - Coming Soon</a>
               </li>
               <li>
                 <a href="#" target="_blank" rel="noreferrer">
-                  Portfolio Website</a>
+                  Portfolio Website - Coming Soon</a>
               </li>
               <li>
                 <a href="#" target="_blank" rel="noreferrer">
-                  Landscaping Business Website</a>
+                  Landscaping Business Website - Coming Soon</a>
               </li>
-            </ul>
-              
-              
-
+            </ul> 
           </div>
           
           ,
@@ -86,11 +85,12 @@ class App extends React.Component {
         content1: 
           <div>
             <h3>E-mail:</h3>
-            <a href="mailto:bocaloud@gmail.com" >bocaloud@gmail.com</a>
+            <a href="mailto:bocaloudcontact@gmail.com" >bocaloudcontact@gmail.com</a>
             <h3>Social:</h3>
             <a href="https://www.instagram.com/bocaloud/" target="_blank" rel="noreferrer" >Instagram</a>
           </div>
-        }
+        },
+    
     ]
   }
 
