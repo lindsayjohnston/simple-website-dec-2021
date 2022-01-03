@@ -42,6 +42,7 @@ a {
   color: unset;
   text-decoration: none;
   padding: 10px;
+
 }
 
 a:hover{
@@ -73,6 +74,7 @@ a:hover{
 }
 
 button {
+  font-size: 20px;
   display: inline-block;
   border: none;
   text-decoration: none;
