@@ -73,7 +73,7 @@ a:hover{
   color: var(--light-color);
 }
 
-button {
+.linkButton {
   font-size: 20px;
   display: inline-block;
   border: none;
@@ -91,23 +91,23 @@ button {
   -moz-appearance: none;
 }
 
-button:hover,
-button:focus {
+.linkButton:hover,
+.linkButton:focus {
   background: var(--dark-color);
   color: var(--light-color)
 }
 
-button:focus{
+.linkButton:focus{
   outline: 1px solid --light-color;
   outline-offset: -4px;
 }
 
-button:disabled {
+.linkButton:disabled {
   background: var(--main-color);
   color: var(--dark-color);
   cursor: unset;
 }
 
-button:active {
+.linkButton:active {
   transform: scale(0.99);
 }

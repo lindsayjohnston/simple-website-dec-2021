@@ -26,9 +26,8 @@ class App extends React.Component {
         title: null,
         image: topImage,
         content1: 
-        <button>
-          <a href="https://forms.gle/bZXqjd5rsD8wwTm5A" target="_blank" rel="noreferrer">Click to Get a Website By Next Week!</a> 
-        </button>, 
+          <a className="linkButton" href="https://forms.gle/bZXqjd5rsD8wwTm5A" target="_blank" rel="noreferrer">Click to Get a Website By Next Week!</a> 
+       , 
         content2:
           <div>
             <h1>Get an affordable website - fast!</h1>
