@@ -35,9 +35,9 @@
 }
 
 .sectionPortraitTop > .content > div {
-    /* width: 100%; */
+    width: 100%;
     /* border: 1px solid black; */
-    padding: 2%;
+    /* padding: 2%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +47,7 @@
     /* width: 100%; */
     /* background-color: thistle; */
     height: 50vh;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,6 +55,11 @@
 
 .sectionPortraitTop > .content > div > .imageDiv >img{
     height: 90%;
+    max-width: 100%;
+}
+
+.sectionPortraitTop .content2Div{
+    margin-top: 10px;
 }
 
 
