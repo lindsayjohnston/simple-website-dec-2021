@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import MainBodyLandscape from '../src/components/landscape/MainBodyLandscape/MainBodyLandscape';
 import MainBodyPortrait from '../src/components/portrait/MainBodyPortrait/MainBodyPortrait';
+import Footer from '../src/components/footer/footer';
 import topImage from '../src/media/logos/bocaloud_first_logo_.png';
 import workImage from '../src/media/images/computer-lady-hands.png';
 import aboutImage from '../src/media/images/lindsay-glasses.png';
@@ -165,6 +166,7 @@ class App extends React.Component {
     return (
       <div className={appClasses}>
         {appBody}
+        <Footer />
       </div>
     );
 

@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+.sectionPortrait p{
+    margin: 10px;
+}
+
 .sectionPortrait > .sectionHeadingDiv{
     width: 100%;
     /* background-color: blue; */
