@@ -16,77 +16,78 @@ if((window.innerHeight / window.innerWidth) < .87){
   screenOrientation= "portrait";
 };
 
+const sections = [
+  { id: "top",
+    title: null,
+    image: topImage,
+    content1: 
+      <a className="linkButton" href="https://forms.gle/bZXqjd5rsD8wwTm5A" target="_blank" rel="noreferrer">Click to Get a Website By Next Week!</a> 
+   , 
+    content2:
+      <div>
+        <h1>Get an affordable website - fast!</h1>
+        <p>Let's get you online.</p>
+      </div>,
+    },
+    { id: "work",
+    title: "Our Work",
+    image: workImage,
+    content1: 
+      <div>
+        <ul>
+        <li>
+            <a href="https://master.d3psjk7ty1d27s.amplifyapp.com/" target="_blank" rel="noreferrer">
+              Flower Farm Website</a>
+          </li>
+          <li>
+            <a href="https://master.d3euk1bu830ig4.amplifyapp.com/" target="_blank" rel="noreferrer">
+              Bait & Tackle Website</a>
+          </li>
+          <li>
+            <a href="https://www.micahclay.us/" target="_blank" rel="noreferrer">
+              Micah Clay - Musician Website</a>
+          </li>
+          <li>
+            <a href="https://www.vannaoh.com/" target="_blank" rel="noreferrer">
+              Vanna Oh! - Musician Website</a>
+          </li>
+        </ul> 
+      </div>
+      
+      ,
+    content2: null
+    },
+    { id: "about",
+    title: "About",
+    image: aboutImage,
+    content1: 
+      <div>
+        <h2>L.J.</h2>
+        <h3>Small Business Owner - Tri-Cities Native</h3>
+      </div>,
+    content2:
+      <p>Hi! I'm the founder of Bocaloud. For over a decade I've worked in the nonprofit and small businesss sectors. There are so many incredible organizations in need of sleek and affordable websites. I'm here to fill that need!</p>
+    },
+    { id: "contact",
+    title: "Contact",
+    image: contactImage,
+    content1: 
+      <div>
+        <h3>E-mail:</h3>
+        <a href="mailto:bocaloudcontact@gmail.com" >bocaloudcontact@gmail.com</a>
+        <h3>Social:</h3>
+        <a href="https://www.instagram.com/bocaloud/" target="_blank" rel="noreferrer" >Instagram</a>
+      </div>
+    },
+
+];
+
 class App extends React.Component {
   
   state= {
     sectionShown:'top',
     menuModalShown: false,
     screenOrientation:screenOrientation,
-    sections: [
-      { id: "top",
-        title: null,
-        image: topImage,
-        content1: 
-          <a className="linkButton" href="https://forms.gle/bZXqjd5rsD8wwTm5A" target="_blank" rel="noreferrer">Click to Get a Website By Next Week!</a> 
-       , 
-        content2:
-          <div>
-            <h1>Get an affordable website - fast!</h1>
-            <p>Let's get you online.</p>
-          </div>,
-        },
-        { id: "work",
-        title: "Our Work",
-        image: workImage,
-        content1: 
-          <div>
-            <ul>
-            <li>
-                <a href="https://master.d3psjk7ty1d27s.amplifyapp.com/" target="_blank" rel="noreferrer">
-                  Flower Farm Website</a>
-              </li>
-              <li>
-                <a href="https://master.d3euk1bu830ig4.amplifyapp.com/" target="_blank" rel="noreferrer">
-                  Bait & Tackle Website</a>
-              </li>
-              <li>
-                <a href="https://www.micahclay.us/" target="_blank" rel="noreferrer">
-                  Micah Clay - Musician Website</a>
-              </li>
-              <li>
-                <a href="https://www.vannaoh.com/" target="_blank" rel="noreferrer">
-                  Vanna Oh! - Musician Website</a>
-              </li>
-            </ul> 
-          </div>
-          
-          ,
-        content2: null
-        },
-        { id: "about",
-        title: "About",
-        image: aboutImage,
-        content1: 
-          <div>
-            <h2>L.J.</h2>
-            <h3>Small Business Owner - Tri-Cities Native</h3>
-          </div>,
-        content2:
-          <p>Hi! I'm the founder of Bocaloud. For over a decade I've worked in the nonprofit and small businesss sectors. There are so many incredible organizations in need of sleek and affordable websites. I'm here to fill that need!</p>
-        },
-        { id: "contact",
-        title: "Contact",
-        image: contactImage,
-        content1: 
-          <div>
-            <h3>E-mail:</h3>
-            <a href="mailto:bocaloudcontact@gmail.com" >bocaloudcontact@gmail.com</a>
-            <h3>Social:</h3>
-            <a href="https://www.instagram.com/bocaloud/" target="_blank" rel="noreferrer" >Instagram</a>
-          </div>
-        },
-    
-    ]
   }
 
   constructor(props) {
@@ -149,7 +150,7 @@ class App extends React.Component {
       appBody = <MainBodyLandscape 
                   menuClick = {this.sectionShownHandler}
                   sectionShown= {this.state.sectionShown} 
-                  sections={this.state.sections} />;
+                  sections={sections} />;
       appClasses= "appLandscape";
     } else {
       appBody = <MainBodyPortrait 
@@ -158,7 +159,7 @@ class App extends React.Component {
                   closeModalClick={this.menuModalCloseHandler}
                   menuModalShown= {this.state.menuModalShown}
                   sectionShown= {this.state.sectionShown} 
-                  sections={this.state.sections}
+                  sections={sections}
                 />;
       appClasses= "appPortrait";
     }
